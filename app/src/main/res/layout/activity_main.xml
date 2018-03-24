@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="firebaseapp.faisal.com.myapplication.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:elevation="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" >
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/userview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="126dp"
+        android:layout_marginTop="18dp"
+        android:text="TextView"
+        android:textColor="@android:color/holo_blue_bright"
+        tools:text="MyText" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:elevation="4dp"
+        android:layout_below="@+id/toolbar2"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+        <EditText
+            android:id="@+id/lemailinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/lpasswordinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="loginAction"
+            android:text="Login" />
+
+        <CheckBox
+            android:id="@+id/checkremember"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remember Me" />
+
+        <TextView
+            android:id="@+id/txtnotlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/notlogin"
+            android:onClick="txtClick"
+            android:textAlignment="center" />
+    </LinearLayout>
+</RelativeLayout>
